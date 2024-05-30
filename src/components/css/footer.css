@@ -1,0 +1,15 @@
+.bg-foot {
+    background-color: black;
+    color: white;
+}
+
+.foot-link{
+    color: lightgray !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    text-decoration: none;
+}
+
+.foot-link:hover, .foot-link.active{
+    color: white !important;
+}

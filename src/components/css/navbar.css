@@ -7,7 +7,60 @@
     color: white !important;
 }
 
-.bg-offcanvas {
-    background-color: black;
-    color: white;
+.bg-offcanvas, .btn-close {
+    background-color: black !important;
+    color: white !important;
+}
+
+.btn-login{
+    background-color: white !important;
+    color: black !important;
+    border: white !important;
+    font-size: 14px !important;
+    padding: 8px 20px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    transition: 0.3s background-color;
+}
+
+.btn-login:hover {
+    background-color: lightgray !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: lightgray !important;
+    font-weight: 500 !important;
+    position: relative !important;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: white !important;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color:  lightgray;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
 }

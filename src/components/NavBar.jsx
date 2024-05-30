@@ -1,9 +1,8 @@
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { NavLink } from "react-router-dom";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./css/navbar.css";
 
@@ -22,27 +21,30 @@ const NavBar = () => {
             <Navbar.Brand href="#" className="me-auto">
               JulioShop
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className="navbar-toggler" />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
               <Offcanvas.Header closeButton className="bg-offcanvas">
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title  id={`offcanvasNavbarLabel-expand-${expand}`}>
                   JulioShop
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body className="bg-offcanvas">
                 <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Inicio</Nav.Link>
-                  <Nav.Link href="#action2">Categorías</Nav.Link>
-                  <Nav.Link href="#action1">Contacto</Nav.Link>
-                  <Nav.Link href="#action2">Administración</Nav.Link>
+                  <NavLink to="/" className={"nav-link"}>Inicio</NavLink>
+                  <NavLink to="/categories" className={"nav-link"}>Categorías</NavLink>
+                  <NavLink to="/contact" className={"nav-link"}>Contacto</NavLink>
+                  <NavLink to="/about" className={"nav-link"}>Sobre Nosotros</NavLink>
+                  <NavLink to="/administration" className={"nav-link"}>Administración</NavLink>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            <Nav.Link href="#action2">Ingresar</Nav.Link>
+            <Button type="button" className="btn-login">
+              Ingresar
+            </Button>
           </Container>
         </Navbar>
       ))}
