@@ -7,7 +7,7 @@ const Foot = () => {
         <div className="container-fluid py-4 bg-foot border-top sticky-bottom">
             <div className="row justify-content-center align-items-center">
 
-                <div className="col-12 col-md-3 mb-3 mb-md-0">
+                <div className="col-12 col-md-3 mt-3 mb-3 mb-md-0">
                     <ul className="nav flex-column text-center">
                         <li className="nav-item mb-2"><Link to="/" className="foot-link">Inicio</Link></li>
                         <li className="nav-item mb-2"><Link to="/categories"

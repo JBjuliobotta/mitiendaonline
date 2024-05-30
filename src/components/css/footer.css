@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
-.foot-link:hover, .foot-link.active{
+.foot-link:hover{
     color: white !important;
+    font-weight: 700 !important;
+}
+
+.bi:hover {
+    cursor: pointer;
 }

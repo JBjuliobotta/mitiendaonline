@@ -8,9 +8,9 @@ const Contact = () => {
     <>
       <div className="contact-container">
         <div className="leftSide">
-          <h1>Contáctate</h1>
-          <h4>Y juntos empecemos tu cambio</h4>
-          <h1>HOY</h1>
+          <h1>Contáctanos</h1>
+          <h4>Envianos tus datos y tu consutla,</h4>
+          <h4>y te responderemos a la brevedad</h4>
           <Link
             className="icon"
             to=""
