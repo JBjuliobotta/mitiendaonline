@@ -4,7 +4,7 @@ import "./css/footer.css"
 
 const Foot = () => {
     return (
-        <div className="container-fluid py-4 bg-foot border-top sticky-bottom">
+        <div className="container-fluid py-3 bg-foot border-top sticky-bottom">
             <div className="row justify-content-center align-items-center">
 
                 <div className="col-12 col-md-3 mt-3 mb-3 mb-md-0">
@@ -19,7 +19,7 @@ const Foot = () => {
                 </div>
                 <div className="col-12 col-md-3 mb-3 mb-md-0">
                     <Link to="/" className="foot-link d-block text-center">
-                        JulioShop
+                        <h1>JulioShop</h1>
                     </Link>
                 </div>
                 <div className="col-12 col-md-3 mb-4 mb-md-0">

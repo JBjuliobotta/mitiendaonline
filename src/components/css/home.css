@@ -47,3 +47,47 @@
     height: 250px;
     margin: 0 40px;
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-img {
+        height: 450px;
+    }
+
+    .logos-slider img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-img {
+        height: 350px;
+    }
+
+    .logos-slider img {
+        height: 100px;
+    }
+
+    .carousel-caption h3{
+        font-size: 17px;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-img {
+        height: 250px;
+    }
+
+    .logos-slider img {
+        height: 100px;
+    }
+
+    .carousel-caption h3{
+        font-size: 17px;
+    }
+    .carousel-caption p{
+        font-size: 12px;
+    }
+}

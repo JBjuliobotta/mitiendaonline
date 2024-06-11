@@ -44,8 +44,18 @@
     font-style: normal;
   }
   
-  .contact-container .leftSide .icon {
-    align-self: center;
+  .form-container {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   @media (min-width: 768px) and (max-width: 1199px) {
